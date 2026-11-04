@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-display: 'Cinzel', serif;
+  }
+  
+  body {
+    font-family: var(--font-sans);
+    color: #221417;
+    background-color: #fcf6f2;
+  }
+
+  h1, h2, h3, .font-serif-luxury {
+    font-family: var(--font-serif);
+  }
+
+  .font-brand {
+    font-family: var(--font-display);
+  }
+}
+
+/* Custom scrollbar in warm berry & gold tones */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #f7ebe6;
+}
+::-webkit-scrollbar-thumb {
+  background: #d99ca8;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8e273e;
+}

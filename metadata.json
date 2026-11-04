@@ -1,0 +1,6 @@
+{
+  "name": "Princess AHB & Braiders Collective",
+  "description": "Luxury African Hair Braiding salon, digital products marketplace, autonomous AI agents for CRM and outreach, and braiders platform.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
