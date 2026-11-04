@@ -123,7 +123,7 @@ export const ScalpAndTakedownClinic: React.FC<ScalpAndTakedownClinicProps> = ({
         <div className="mb-10 p-5 sm:p-6 rounded-2xl bg-white border border-[#edd8d5] shadow-xs flex flex-col sm:flex-row items-center gap-5">
           <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden border-2 border-[#8e273e] shrink-0 shadow-md ring-4 ring-[#faebea]">
             <img
-              src="/src/assets/images/hair_loss_coverup_1791876312275.jpg"
+              src="/assets/images/hair_loss_coverup_1791876312275.jpg"
               alt="Scalp & Follicle Restoration Care"
               referrerPolicy="no-referrer"
               className="w-full h-full object-cover"

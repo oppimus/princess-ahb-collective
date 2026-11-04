@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { Crown, Sparkles, ShieldCheck, Star, Clock, BookOpen, ExternalLink, ArrowRight } from 'lucide-react';
 import { OFFICIAL_BOOKING_URL } from '../data/mockData';
+import heroLookBeautifulImg from '../assets/images/hero_look_beautiful_1791871544212.jpg';
+import frenchCurlGlamourImg from '../assets/images/french_curl_glamour_1791272082696.jpg';
+import braidedUpdoCrownImg from '../assets/images/braided_updo_crown_1791873904399.jpg';
 
 interface HeroProps {
   onOpenBooking: () => void;
@@ -25,7 +28,8 @@ export const Hero: React.FC<HeroProps> = ({
       id: 'boho-knotless',
       label: 'Bohemian Knotless Crown',
       tag: 'Signature Knotless',
-      url: '/src/assets/images/hero_look_beautiful_1791871544212.jpg',
+      url: heroLookBeautifulImg,
+      fallbackUrl: '/assets/images/hero_look_beautiful_1791871544212.jpg',
       headline: 'Look & Feel Beautiful.',
       desc: 'The Best Service. The Best Styles. Painless precision crafted by generational master braiders.',
       alt: 'Luxury Bohemian Goddess Knotless Braids with Flowing Curls',
@@ -34,7 +38,8 @@ export const Hero: React.FC<HeroProps> = ({
       id: 'french-curls',
       label: 'French Curl Glamour',
       tag: 'Silky Bouncy Curls',
-      url: '/src/assets/images/french_curl_glamour_1791272082696.jpg',
+      url: frenchCurlGlamourImg,
+      fallbackUrl: '/assets/images/french_curl_glamour_1791272082696.jpg',
       headline: 'Healthy Roots First.',
       desc: 'Zero-tension protective styling so your natural hair thrives underneath with maximum volume and shine.',
       alt: 'French Curl Braids with Defined Bouncy Ends',
@@ -43,7 +48,8 @@ export const Hero: React.FC<HeroProps> = ({
       id: 'braided-updo',
       label: 'Regal Sculpted Updo',
       tag: 'Generational Craft',
-      url: '/src/assets/images/braided_updo_crown_1791873904399.jpg',
+      url: braidedUpdoCrownImg,
+      fallbackUrl: '/assets/images/braided_updo_crown_1791873904399.jpg',
       headline: 'Regal Cultural Artistry.',
       desc: 'Centuries of West African braiding tradition brought to modern luxury salon comfort in Louisiana and Virginia.',
       alt: 'Regal Sculpted Braided Crown Updo',
@@ -190,6 +196,12 @@ export const Hero: React.FC<HeroProps> = ({
                       src={photo.url}
                       alt={photo.label}
                       referrerPolicy="no-referrer"
+                      onError={(e) => {
+                        const target = e.currentTarget;
+                        if (photo.fallbackUrl && target.src !== photo.fallbackUrl) {
+                          target.src = photo.fallbackUrl;
+                        }
+                      }}
                       className="w-full h-full object-cover"
                     />
                   </button>
@@ -201,6 +213,12 @@ export const Hero: React.FC<HeroProps> = ({
                 src={currentPhoto.url}
                 alt={currentPhoto.alt}
                 referrerPolicy="no-referrer"
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  if (currentPhoto.fallbackUrl && target.src !== currentPhoto.fallbackUrl) {
+                    target.src = currentPhoto.fallbackUrl;
+                  }
+                }}
                 className="w-full h-[460px] sm:h-[510px] object-cover object-center group-hover:scale-102 transition-transform duration-700"
               />
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import princessLogoImg from '../assets/images/princess_official_logo_1791668953742.jpg';
 
 interface BrandLogoProps {
   size?: 'sm' | 'md' | 'lg' | 'xl';
@@ -23,9 +24,15 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
       {/* Official Circular Crimson Medallion Logo */}
       <div className={`relative ${dimensionClasses} rounded-full overflow-hidden shrink-0 shadow-md ring-2 ring-[#d4af37] bg-[#9e161c]`}>
         <img
-          src="/src/assets/images/princess_official_logo_1791668953742.jpg"
+          src={princessLogoImg}
           alt="Princess African Hair Braiding Official Logo"
           referrerPolicy="no-referrer"
+          onError={(e) => {
+            const target = e.currentTarget;
+            if (target.src !== '/assets/images/princess_official_logo_1791668953742.jpg') {
+              target.src = '/assets/images/princess_official_logo_1791668953742.jpg';
+            }
+          }}
           className="w-full h-full object-cover rounded-full scale-102"
         />
       </div>

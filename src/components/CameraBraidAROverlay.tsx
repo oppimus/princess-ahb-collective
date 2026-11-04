@@ -241,7 +241,7 @@ export const CameraBraidAROverlay: React.FC<CameraBraidAROverlayProps> = ({
           /* Fallback when camera permission denied or loading */
           <div className="relative w-full h-full overflow-hidden">
             <img
-              src="/src/assets/images/boho_knotless_luxury_1791272062825.jpg"
+              src="/assets/images/boho_knotless_luxury_1791272062825.jpg"
               alt="Simulated AR Mirror"
               className="w-full h-full object-cover opacity-60"
             />

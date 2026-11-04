@@ -198,7 +198,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
           <div className="flex items-center gap-3">
             <div className="w-8 h-8 rounded-full overflow-hidden ring-1.5 ring-white/80 shrink-0 shadow-sm">
               <img
-                src="/src/assets/images/princess_official_logo_1791668953742.jpg"
+                src="/assets/images/princess_official_logo_1791668953742.jpg"
                 alt="Princess Logo"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover"

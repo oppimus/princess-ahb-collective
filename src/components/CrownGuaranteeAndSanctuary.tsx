@@ -202,7 +202,7 @@ export const CrownGuaranteeAndSanctuary: React.FC<CrownGuaranteeAndSanctuaryProp
                 <div className="rounded-2xl overflow-hidden border border-[#edd8d5] bg-[#faf4f2] flex flex-col group hover:shadow-md transition-all">
                   <div className="relative aspect-[4/3] sm:aspect-[16/11] overflow-hidden bg-stone-900">
                     <img
-                      src="/src/assets/images/boho_knotless_luxury_1791272062825.jpg"
+                      src="/assets/images/boho_knotless_luxury_1791272062825.jpg"
                       alt="Signature Master Braided Crown"
                       referrerPolicy="no-referrer"
                       className="w-full h-full object-cover group-hover:scale-103 transition-transform duration-500"
@@ -235,7 +235,7 @@ export const CrownGuaranteeAndSanctuary: React.FC<CrownGuaranteeAndSanctuaryProp
                 <div className="rounded-2xl overflow-hidden border border-[#edd8d5] bg-[#faf4f2] flex flex-col group hover:shadow-md transition-all">
                   <div className="relative aspect-[4/3] sm:aspect-[16/11] overflow-hidden bg-stone-900">
                     <img
-                      src="/src/assets/images/human_braiding_macro_1791668764830.jpg"
+                      src="/assets/images/human_braiding_macro_1791668764830.jpg"
                       alt="Zero-Tension Root Grip & Follicle Care"
                       referrerPolicy="no-referrer"
                       className="w-full h-full object-cover group-hover:scale-103 transition-transform duration-500"
@@ -268,7 +268,7 @@ export const CrownGuaranteeAndSanctuary: React.FC<CrownGuaranteeAndSanctuaryProp
                 <div className="rounded-2xl overflow-hidden border border-[#edd8d5] bg-[#faf4f2] flex flex-col group hover:shadow-md transition-all">
                   <div className="relative aspect-[4/3] sm:aspect-[16/11] overflow-hidden bg-stone-900">
                     <img
-                      src="/src/assets/images/stitch_tribal_crown_1791272115286.jpg"
+                      src="/assets/images/stitch_tribal_crown_1791272115286.jpg"
                       alt="West African Ancestral Braiding Artistry"
                       referrerPolicy="no-referrer"
                       className="w-full h-full object-cover group-hover:scale-103 transition-transform duration-500"
